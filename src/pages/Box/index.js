@@ -29,7 +29,7 @@ export default class Box extends Component {
 
     io.on('file', data => {
       this.setState({
-        box: { ...this.state.box, file: [data, ...this.state.box.files] }
+        box: { ...this.state.box, files: [data, ...this.state.box.files] }
       });
     });
   };
